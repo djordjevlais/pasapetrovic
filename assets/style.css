@@ -1,0 +1,86 @@
+/* Modern CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: #110B0B;
+    color: #fff;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+    overflow-wrap: break-word;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 64px 16px;
+}
+
+.container a {
+    color: #fff;
+}
+
+.container > * {
+    width: 100%;
+    max-width: 600px;
+}
+
+.container > p, .intro > p {
+    margin: 0 0 24px;
+}
+
+.container > img {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.container h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.intro, .contact , .languages {
+    margin-bottom: 96px;
+}
+
+.container .experience {
+    margin-bottom: 32px;
+}
+
+.subtle {
+    opacity: 0.5;
+}
